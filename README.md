@@ -41,7 +41,7 @@ Using max-width for the .blog-card-container ensures the design remains responsi
 The use of min-height: 100svh for the body ensures the card is always vertically centered in the viewport.
 
 Semantic HTML:
-Using <main> for the card container is semantically correct because it represents the main content of the page.
+Using main for the card container is semantically correct because it represents the main content of the page.
 
 Flexbox:
 Flexbox is used effectively for centering and aligning content, both for the overall layout and within the card.
