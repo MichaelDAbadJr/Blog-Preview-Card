@@ -1,0 +1,163 @@
+/* Import Fig Tree font with weights 500 and 800 */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-light: hsl(0, 0%, 42%);
+  --gray-dark: hsl(0, 0%, 7%);
+
+  /* Font Variables */
+  --medium: 500;
+  --xtra-bold: 800;
+
+  /* Text Presets */
+  --preset-1-font-size: 1.5rem; /*24px;  */
+  --preset-2-font-size: 1rem; /*16px; */
+  --preset-3-font-size: 0.875rem; /*14px; */
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0px;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+
+/* Text-Preset CSS classes */
+.text-preset-1 {
+  font-weight: var(--xtra-bold);
+  font-size: var(--preset-1-font-size);
+}
+
+.text-preset-2 {
+  font-weight: var(--medium);
+  font-size: var(--preset-2-font-size);
+}
+
+.text-preset-3 {
+  font-weight: var(--medium);
+  font-size: var(--preset-3-font-size);
+}
+
+.text-preset-3-bold {
+  font-weight: var(--xtra-bold);
+  font-size: var(--preset-3-font-size);
+}
+
+/* Element-Specific CSS classes */
+.blog-card-container {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 24rem;
+  aspect-ratio: 384 / 522; /* Maintain the ratio */
+  height: auto;
+  padding: 24px;
+  border: 1px solid var(--gray-dark);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 black;
+  gap: 24px;
+  /* transition: box-shadow 600ms ease-out, box-shadow 600ms ease-out; */
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.blog-card-container:hover {
+  box-shadow: 16px 16px 0 0 black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.blog-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blog-topic {
+  align-self: flex-start;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: var(--yellow);
+  color: var(--gray-dark);
+  gap: 8px;
+  border-radius: 4px;
+}
+
+.blog-publish-date {
+  color: var(--gray-dark);
+}
+
+.blog-title {
+  color: var(--gray-dark);
+  /* transition: color 600ms ease-out, color 600ms ease-out; */
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.blog-card-container:hover .blog-title {
+  color: var(--yellow);
+}
+
+.blog-description {
+  color: var(--gray-light);
+}
+
+.blog-author {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 12px;
+  color: var(--gray-dark);
+}
+
+.blog-author img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 375px) {
+  .blog-card-container {
+    max-width: 20.4375rem;
+    aspect-ratio: 327 / 501; /* Maintain the ratio */
+  }
+
+  .blog-topic {
+    font-size: 0.75rem; /*12px;  */
+  }
+
+  .blog-publish-date {
+    font-size: 0.75rem; /*12px;  */
+  }
+
+  .blog-title {
+    font-size: 1.25rem; /*20px;  */
+  }
+
+  .blog-description {
+    font-size: 0.875rem; /*14px; */
+  }
+}
