@@ -34,7 +34,7 @@ Root Variables:
 Using :root for color variables, font weight variables, and text-presets is excellent for scalability and maintainability. It makes it easier to update the text theme and reuse colors.
 
 Typography:
-The Google Font Figtree is applied consistently, and the font weights (400 and 00) are preloaded for performance optimization. I also used text-preset classes to easily re-use and scale the text/font theme when I needed.
+The Google Font Figtree is applied consistently, and the font weights (400 and 800) are preloaded for performance optimization. I also used text-preset classes to easily re-use and scale the text/font theme when I needed.
 
 Responsive Design:
 Using max-width for the .blog-card-container ensures the design remains responsive across devices.
